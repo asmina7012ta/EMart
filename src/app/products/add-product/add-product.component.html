@@ -1,0 +1,18 @@
+<div class="container w-50 text-center p-5 mt-3 mb-5" style="background-color: rgb(190, 219, 209);">
+    <h1>Add New Product</h1>
+    <form (ngSubmit)="addProduct()" [formGroup]="addProductForm" action="" class="container p-5"> 
+        <input  formControlName="id" type="text" class="form-control mt-3 p-2 " placeholder="id" name="z1" id="x1">
+        <input  formControlName="productName" type="text" class="form-control mt-3 p-2 " placeholder="Name" name="z2" id="x2">
+         <input formControlName="categoryid" type="text" class="form-control mt-3 p-2 " placeholder="Category id" name="z3" id="x3">
+          <input formControlName="description" type="text" class="form-control mt-3 p-2 " placeholder="description" name="z4" id="x4"> 
+          <input formControlName="price" type="text" class="form-control mt-3 p-2 " placeholder="price" name="z5" id="x5">
+          <input formControlName="is_available" type="text" class="form-control mt-3 p-2 " placeholder="is available True/False" name="z6" id="x6">
+          <input formControlName="productImg" type="text" class="form-control mt-3 p-2 " placeholder="image Url" name="z7" id="x7">
+          <input formControlName="rating"  type="text" class="form-control mt-3 p-2 " placeholder="Rating" name="z8" id="x8">
+          <input formControlName="review" type="text" class="form-control mt-3 p-2 " placeholder="Review" name="z9" id="x">
+          <input formControlName="ventorname" type="text" class="form-control mt-3 p-2 " placeholder="ventorname" name="z10" id="x10">
+          <input formControlName="warranty" type="text" class="form-control mt-3 p-2 " placeholder="Warranty" name="z11" id="x11">
+          <button type="submit"  class="btn btn-info p-2 mt-3">Add</button>
+    </form>
+
+</div>

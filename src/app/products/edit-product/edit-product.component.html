@@ -1,0 +1,18 @@
+<div class="container w-50 text-center p-5 mt-3 mb-5" style="background-color: rgb(190, 219, 209);">
+    <h1>Edit Product</h1>
+    <form (ngSubmit)="updateProduct(udateProductForm)" action="" class="container p-5" #udateProductForm="ngForm">
+        <input [(ngModel)]="pdata.id" type="text" class="form-control mt-3 p-2 " name="z1" id="x1">
+        <input [(ngModel)]="pdata.productName" type="text" class="form-control mt-3 p-2 " name="z2" id="x2">
+        <input [(ngModel)]="pdata.categoryid" type="text" class="form-control mt-3 p-2 " name="z3" id="x3">
+        <input [(ngModel)]="pdata.description" type="text" class="form-control mt-3 p-2 " name="z4" id="x4">
+        <input [(ngModel)]="pdata.price" type="text" class="form-control mt-3 p-2 " name="z5" id="x5">
+        <input [(ngModel)]="pdata.is_available" type="text" class="form-control mt-3 p-2 " name="z6" id="x6">
+        <input [(ngModel)]="pdata.productImg" type="text" class="form-control mt-3 p-2 " name="z7" id="x7">
+        <input [(ngModel)]="pdata.rating" type="text" class="form-control mt-3 p-2 " name="z8" id="x8">
+        <input [(ngModel)]="pdata.review" type="text" class="form-control mt-3 p-2 " name="z9" id="x">
+        <input [(ngModel)]="pdata.ventorname" type="text" class="form-control mt-3 p-2 " name="z10" id="x10">
+        <input [(ngModel)]="pdata.warranty" type="text" class="form-control mt-3 p-2 " name="z11" id="x11">
+        <button  type="submit" class="btn btn-info p-2 mt-3">Edit</button>
+    </form>
+
+</div>

@@ -1,0 +1,29 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{pdata.productImg}}" alt="..." /></div>
+            <div class="col-md-6">
+            <div class="small mb-1">vendor Name | <strong>{{pdata.ventorname}}</strong></div>
+                <h1 class="display-5 fw-bolder">{{pdata.productName}}</h1>
+                <div class="fs-5 mb-5">
+                   
+                    <span>Price | <strong>{{pdata.price}}Rs</strong></span> <br>
+                    <span>Rating | <strong>{{pdata.rating}}</strong></span>
+                </div>
+                <p class="lead">{{pdata.description}}</p>
+                <h6>Review | {{pdata.review}}</h6>
+                <h6>Warranty | {{pdata.warranty}}</h6>
+                <div class="d-flex">
+                    <button  class="btn btn-outline-info flex-shrink-0" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        <a style="text-decoration: none;"  href="products/edit-product/{{pdata.id}}">Edit</a>
+                    </button>
+                    <button class="btn btn-outline-info flex-shrink-0 ms-3" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                      <a style="text-decoration: none; color: rgb(27, 93, 165); ;" href="products/delete-product/{{pdata.id}}">Delete</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
